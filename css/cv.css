@@ -1,0 +1,58 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.columna1 {
+    background-color: lightblue;
+    width: 20%;
+    height:auto;
+}
+
+.columna2 {
+    width: 80%;
+    height: 100%;
+}
+
+.contenedor .columna2 h1 {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.foto {
+    text-align: center;
+}
+
+.textocolumna1 {
+    margin: 20%;
+}
+
+.columna2 {
+    margin-left: 5%;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Square Peg', cursive;
+    font-family: 'Water Brush', cursive;
+    font-size: 60px;
+}
+
+.detalles {
+    display: none;
+    padding: 10px;
+}
+
+.detalles.active {
+    display: block;
+}

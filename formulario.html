@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario contacto</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <script src="js/validacion.js"></script>
+</head>
+<body>
+    <h1>Complete la siguiente informacion y me contactare a la brevedad</h1>
+    <form>
+        <p>
+            <label for="nom">Nombre</label>
+            <input type="text" id="nom" required>
+        </p>
+        <p>
+            <label for="ape">Apellido</label>
+            <input type="text" id="ape" required>
+        </p>
+        <p>
+            <label for="rs">Razon Social</label>
+            <input type="text" id="rs">
+        </p>
+        <p>
+            <label for="sexo">Sexo</label>
+            <ul>
+                <li>
+                    <input type="radio" value="Hombre" name="sexo" required>
+                    <label>Hombre</label>
+                </li>
+                <li>
+                    <input type="radio" value="Mujer" name="sexo" required>
+                    <label>Mujer</label>
+                </li>
+            </ul>
+        </p>
+        <p>
+            <label for="tel">Telefono</label>
+            <input type="tel" id="tel" pattern="[0-9]{10}" required>
+            <small>Ingrese un número de teléfono válido (10 dígitos)</small>
+        </p>
+        <p>
+            <label for="correo">e-mail</label>
+            <input type="email" id="correo" required>
+        </p>
+        <p>
+            <label for="comen">Comentarios</label>
+            <textarea name="comentarios" id="comen"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Envio">
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
+    
+    
+</body>
+</html>
